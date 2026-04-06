@@ -1,0 +1,519 @@
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:28806:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:28806:7: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:29780:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:29780:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:29794:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:29794:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:29808:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:29808:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:31425:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:31425:7: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:33407:9: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_27_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:33407:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:33419:9: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_39_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:33419:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:33436:9: warning: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_56_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:33436:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57530:5: warning: Added loop label VITIS_LOOP_265_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^~~
+    VITIS_LOOP_265_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57530:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57540:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^~~
+    VITIS_LOOP_275_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57540:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57551:5: warning: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^~~
+    VITIS_LOOP_286_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57551:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57558:5: warning: Added loop label VITIS_LOOP_293_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_293_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57558:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57560:9: warning: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^~~
+        VITIS_LOOP_295_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57560:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57572:5: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^~~
+    VITIS_LOOP_307_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57572:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57574:9: warning: Added loop label VITIS_LOOP_309_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_309_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57574:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57589:5: warning: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_324_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57589:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57609:5: warning: Added loop label VITIS_LOOP_344_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_344_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57609:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57610:9: warning: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^~~
+        VITIS_LOOP_345_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57610:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57625:5: warning: Added loop label VITIS_LOOP_360_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_360_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57625:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57632:5: warning: Added loop label VITIS_LOOP_367_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_367_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57632:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57942:5: warning: Added loop label VITIS_LOOP_136_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^~~
+    VITIS_LOOP_136_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57942:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57943:9: warning: Added loop label VITIS_LOOP_137_2:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_137_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57943:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57964:5: warning: Added loop label VITIS_LOOP_158_3:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^~~
+    VITIS_LOOP_158_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57964:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57965:9: warning: Added loop label VITIS_LOOP_159_4:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_159_4: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:57965:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58112:2: warning: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_31_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58112:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58124:5: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_43_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58124:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58138:5: warning: Added loop label VITIS_LOOP_57_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_57_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58138:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58165:5: warning: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_84_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58165:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58195:5: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_114_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58195:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58232:5: warning: Added loop label VITIS_LOOP_151_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::exp_table_size; i++) {
+    ^~~
+    VITIS_LOOP_151_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58232:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58248:5: warning: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::inv_table_size; i++) {
+    ^~~
+    VITIS_LOOP_167_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58248:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58281:5: warning: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_200_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58281:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58294:5: warning: Added loop label VITIS_LOOP_213_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_213_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58294:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58327:5: warning: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_246_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58327:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58336:5: warning: Added loop label VITIS_LOOP_255_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_255_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58336:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58349:5: warning: Added loop label VITIS_LOOP_268_3:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_268_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58349:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58356:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_275_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58356:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58369:5: warning: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_288_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58369:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58406:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58406:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58411:5: warning: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_330_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58411:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58412:9: warning: Added loop label VITIS_LOOP_331_3:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < CONFIG_T::n_slice; jj++) {
+        ^~~
+        VITIS_LOOP_331_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58412:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58429:5: warning: Added loop label VITIS_LOOP_348_4:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_348_4: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58429:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58442:5: warning: Added loop label VITIS_LOOP_361_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_361_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58442:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58450:5: warning: Added loop label VITIS_LOOP_369_2:   [xilinx-label-all-loops]
+    for (int i = 1; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_369_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58450:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58486:5: warning: Added loop label VITIS_LOOP_405_1:   [xilinx-label-all-loops]
+    for (signed i = 0; i < CONFIG_T::n_outer; i++) {
+    ^~~
+    VITIS_LOOP_405_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58486:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58488:2: warning: Added loop label VITIS_LOOP_407_2:   [xilinx-label-all-loops]
+ for (signed k = 0; k < CONFIG_T::n_inner; k++) {
+ ^~~
+ VITIS_LOOP_407_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58488:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58490:2: warning: Added loop label VITIS_LOOP_409_3:   [xilinx-label-all-loops]
+ for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+ ^~~
+ VITIS_LOOP_409_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58490:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58495:13: warning: Added loop label VITIS_LOOP_414_4:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^~~
+            VITIS_LOOP_414_4: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58495:13: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58508:5: warning: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_427_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58508:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58538:5: warning: Added loop label VITIS_LOOP_457_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_457_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58538:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58565:2: warning: Added loop label VITIS_LOOP_484_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_484_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58565:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58579:2: warning: Added loop label VITIS_LOOP_498_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_498_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58579:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58595:5: warning: Added loop label VITIS_LOOP_514_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_514_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58595:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58613:5: warning: Added loop label VITIS_LOOP_532_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_532_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58613:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58630:5: warning: Added loop label VITIS_LOOP_549_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_549_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58630:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58647:5: warning: Added loop label VITIS_LOOP_566_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_566_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58647:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58677:5: warning: Added loop label VITIS_LOOP_596_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_596_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58677:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58696:5: warning: Added loop label VITIS_LOOP_615_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_615_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58696:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58726:5: warning: Added loop label VITIS_LOOP_645_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_645_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58726:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58745:5: warning: Added loop label VITIS_LOOP_664_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_664_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58745:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58775:5: warning: Added loop label VITIS_LOOP_694_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_694_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58775:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58802:5: warning: Added loop label VITIS_LOOP_721_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_721_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58802:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58830:2: warning: Added loop label VITIS_LOOP_749_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_749_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58830:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58860:5: warning: Added loop label VITIS_LOOP_779_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_779_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58860:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58889:5: warning: Added loop label VITIS_LOOP_808_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_808_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58889:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58909:5: warning: Added loop label VITIS_LOOP_828_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_828_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:58909:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59154:9: warning: Added loop label VITIS_LOOP_229_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_229_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59154:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59161:13: warning: Added loop label VITIS_LOOP_236_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_236_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59161:13: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59170:9: warning: Added loop label VITIS_LOOP_245_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_245_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59170:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59179:13: warning: Added loop label VITIS_LOOP_254_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < pack_diff; j++) {
+            ^~~
+            VITIS_LOOP_254_4: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59179:13: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59183:17: warning: Added loop label VITIS_LOOP_258_5:   [xilinx-label-all-loops]
+                for (int k = 0; k < res_T::size; k++) {
+                ^~~
+                VITIS_LOOP_258_5: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59183:17: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59194:9: warning: Added loop label VITIS_LOOP_269_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_269_6: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59194:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59198:13: warning: Added loop label VITIS_LOOP_273_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_273_7: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59198:13: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59222:9: warning: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < n_dupl; j++) {
+        ^~~
+        VITIS_LOOP_297_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59222:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59226:13: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < res_T::size; k++) {
+            ^~~
+            VITIS_LOOP_301_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59226:13: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59245:9: warning: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < res_T::size; k++) {
+        ^~~
+        VITIS_LOOP_320_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59245:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59469:9: warning: Added loop label VITIS_LOOP_211_1:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_211_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59469:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59478:9: warning: Added loop label VITIS_LOOP_220_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_220_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59478:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59583:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59583:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59588:9: warning: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_330_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59588:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59596:9: warning: Added loop label VITIS_LOOP_338_3:   [xilinx-label-all-loops]
+        for (int i = 1; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_338_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:59596:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:60301:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:60375:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:60457:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:60830:9: warning: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < __SHIFT_DEPTH__; ++i)
+        ^~~
+        VITIS_LOOP_64_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:60830:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:60837:9: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < __SHIFT_DEPTH__; ++i)
+        ^~~
+        VITIS_LOOP_71_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:60837:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61379:5: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (unsigned k = 0; k < CONFIG_T::n_out; k++) {
+    ^~~
+    VITIS_LOOP_14_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61379:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61439:9: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+        for (int im = 0; im < CONFIG_T::n_out; im++) {
+        ^~~
+        VITIS_LOOP_74_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61439:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61595:5: warning: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+    for (int i = 1; i < N; i++) {
+    ^~~
+    VITIS_LOOP_13_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61595:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61604:5: warning: Added loop label VITIS_LOOP_22_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_22_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61604:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61679:5: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+    for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    ^~~
+    VITIS_LOOP_97_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61679:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61681:9: warning: Added loop label VITIS_LOOP_99_2:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < restricted_padded_width; ii += CONFIG_T::stride_width) {
+        ^~~
+        VITIS_LOOP_99_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61681:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61686:2: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+ for (int jj = 0; jj < CONFIG_T::pool_width; jj++) {
+ ^~~
+ VITIS_LOOP_104_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61686:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61714:2: warning: Added loop label VITIS_LOOP_132_1:   [xilinx-label-all-loops]
+ for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+ ^~~
+ VITIS_LOOP_132_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61714:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61717:2: warning: Added loop label VITIS_LOOP_135_2:   [xilinx-label-all-loops]
+ for (int jj = 0; jj < CONFIG_T::n_in; jj++) {
+ ^~~
+ VITIS_LOOP_135_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61717:2: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61772:5: warning: Added loop label VITIS_LOOP_190_1:   [xilinx-label-all-loops]
+    for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    ^~~
+    VITIS_LOOP_190_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61772:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61774:9: warning: Added loop label VITIS_LOOP_192_2:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < restricted_padded_height; ii += CONFIG_T::stride_height) {
+        ^~~
+        VITIS_LOOP_192_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61774:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61776:13: warning: Added loop label VITIS_LOOP_194_3:   [xilinx-label-all-loops]
+            for (int jj = 0; jj < restricted_padded_width; jj += CONFIG_T::stride_width) {
+            ^~~
+            VITIS_LOOP_194_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61776:13: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61783:17: warning: Added loop label VITIS_LOOP_201_4:   [xilinx-label-all-loops]
+                for (int kk = 0; kk < CONFIG_T::pool_height; kk++) {
+                ^~~
+                VITIS_LOOP_201_4: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61783:17: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61785:21: warning: Added loop label VITIS_LOOP_203_5:   [xilinx-label-all-loops]
+                    for (int ll = 0; ll < CONFIG_T::pool_width; ll++) {
+                    ^~~
+                    VITIS_LOOP_203_5: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61785:21: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61826:5: warning: Added loop label VITIS_LOOP_244_1:   [xilinx-label-all-loops]
+    for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+    ^~~
+    VITIS_LOOP_244_1: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61826:5: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61828:9: warning: Added loop label VITIS_LOOP_246_2:   [xilinx-label-all-loops]
+        for (int ii = 0; ii < restricted_padded_height; ii += CONFIG_T::stride_height) {
+        ^~~
+        VITIS_LOOP_246_2: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61828:9: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61830:13: warning: Added loop label VITIS_LOOP_248_3:   [xilinx-label-all-loops]
+            for (int jj = 0; jj < restricted_padded_width; jj += CONFIG_T::stride_width) {
+            ^~~
+            VITIS_LOOP_248_3: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61830:13: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61836:17: warning: Added loop label VITIS_LOOP_254_4:   [xilinx-label-all-loops]
+                for (int kk = 0; kk < CONFIG_T::stride_height; kk++) {
+                ^~~
+                VITIS_LOOP_254_4: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61836:17: note: FIX-IT applied suggested code changes
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61838:21: warning: Added loop label VITIS_LOOP_256_5:   [xilinx-label-all-loops]
+                    for (int ll = 0; ll < CONFIG_T::stride_width; ll++) {
+                    ^~~
+                    VITIS_LOOP_256_5: 
+/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/gaussian_prj/solution1/.autopilot/db/gaussian.pp.0.cpp:61838:21: note: FIX-IT applied suggested code changes

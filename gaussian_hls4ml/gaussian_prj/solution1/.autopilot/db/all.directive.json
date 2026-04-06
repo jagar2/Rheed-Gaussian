@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "gaussian",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "gaussian"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/mnt/Research/Rheed-Gaussian/gaussian_hls4ml/build_prj.tcl",
+    "sourceLine": 169,
+    "success": true
+  }
+]

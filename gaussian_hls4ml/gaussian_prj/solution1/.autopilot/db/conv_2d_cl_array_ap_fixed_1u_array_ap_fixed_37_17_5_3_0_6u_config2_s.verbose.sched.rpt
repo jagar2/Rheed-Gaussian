@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vitis HLS Report for 'conv_2d_cl_array_ap_fixed_1u_array_ap_fixed_37_17_5_3_0_6u_config2_s'
+================================================================
+* Date:           Sun Apr  5 17:32:11 2026
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        gaussian_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: kintexu
+* Target device:  xcku035-fbva676-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.847 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-------+-------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max    |  min  |  max  |   Type  |
+    +---------+---------+-----------+-----------+-------+-------+---------+
+    |    13827|    13827|  69.135 us|  69.135 us|  13827|  13827|       no|
+    +---------+---------+-----------+-----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name            |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- ReadInputHeight_ReadInputWidth  |    13825|    13825|         8|          6|          1|  2304|       yes|
+        +----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 6, depth = 8
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 1
+  Pipeline-0 : II = 6, D = 8, States = { 1 2 3 4 5 6 7 8 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.42>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 11 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i222 %layer2_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %InputLayer, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.53ns)   --->   "%store_ln0 = store i12 0, i12 %indvar_flatten"   --->   Operation 14 'store' 'store_ln0' <Predicate = true> <Delay = 0.53>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln25 = br void %for.body12.i" [firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 15 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i12 %indvar_flatten" [firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 16 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (1.35ns)   --->   "%icmp_ln25 = icmp_eq  i12 %indvar_flatten_load, i12 2304" [firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 17 'icmp' 'icmp_ln25' <Predicate = true> <Delay = 1.35> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (1.35ns)   --->   "%add_ln25 = add i12 %indvar_flatten_load, i12 1" [firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 18 'add' 'add_ln25' <Predicate = true> <Delay = 1.35> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.35> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln25 = br i1 %icmp_ln25, void %for.cond.cleanup11.i, void %_ZN4nnet25conv_2d_buffer_latency_clINS_5arrayI8ap_fixedILi16ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EELj1EEENS1_IS2_ILi37ELi17ELS3_5ELS4_3ELi0EELj6EEE7config2EEvRN3hls6streamIT_Li0EEERNSB_IT0_Li0EEEPNT1_8weight_tEPNSI_6bias_tE.47.exit" [firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 19 'br' 'br_ln25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.53ns)   --->   "%store_ln25 = store i12 %add_ln25, i12 %indvar_flatten" [firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 20 'store' 'store_ln25' <Predicate = (!icmp_ln25)> <Delay = 0.53>
+
+State 2 <SV = 1> <Delay = 1.00>
+ST_2 : Operation 21 [1/1] (1.00ns)   --->   "%InputLayer_read = read i16 @_ssdm_op_Read.axis.volatile.i16P128A, i16 %InputLayer" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 21 'read' 'InputLayer_read' <Predicate = (!icmp_ln25)> <Delay = 1.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 22 [7/7] (0.00ns)   --->   "%call_ln32 = call void @compute_output_buffer_2d<array,array<ap_fixed<37,17,5,3,0>,6u>,config2>, i16 %InputLayer_read, i222 %layer2_out, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_27, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_28, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_25, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_26, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer, i32 %sX_5, i32 %sY_5, i32 %pY_5, i32 %pX_5" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 22 'call' 'call_ln32' <Predicate = (!icmp_ln25)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln82 = ret" [firmware/nnet_utils/nnet_conv2d_stream.h:82]   --->   Operation 33 'ret' 'ret_ln82' <Predicate = (icmp_ln25)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 23 [6/7] (0.00ns)   --->   "%call_ln32 = call void @compute_output_buffer_2d<array,array<ap_fixed<37,17,5,3,0>,6u>,config2>, i16 %InputLayer_read, i222 %layer2_out, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_27, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_28, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_25, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_26, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer, i32 %sX_5, i32 %sY_5, i32 %pY_5, i32 %pX_5" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 23 'call' 'call_ln32' <Predicate = (!icmp_ln25)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 24 [5/7] (0.00ns)   --->   "%call_ln32 = call void @compute_output_buffer_2d<array,array<ap_fixed<37,17,5,3,0>,6u>,config2>, i16 %InputLayer_read, i222 %layer2_out, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_27, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_28, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_25, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_26, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer, i32 %sX_5, i32 %sY_5, i32 %pY_5, i32 %pX_5" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 24 'call' 'call_ln32' <Predicate = (!icmp_ln25)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 25 [4/7] (0.00ns)   --->   "%call_ln32 = call void @compute_output_buffer_2d<array,array<ap_fixed<37,17,5,3,0>,6u>,config2>, i16 %InputLayer_read, i222 %layer2_out, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_27, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_28, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_25, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_26, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer, i32 %sX_5, i32 %sY_5, i32 %pY_5, i32 %pX_5" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 25 'call' 'call_ln32' <Predicate = (!icmp_ln25)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 26 [3/7] (0.00ns)   --->   "%call_ln32 = call void @compute_output_buffer_2d<array,array<ap_fixed<37,17,5,3,0>,6u>,config2>, i16 %InputLayer_read, i222 %layer2_out, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_27, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_28, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_25, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_26, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer, i32 %sX_5, i32 %sY_5, i32 %pY_5, i32 %pX_5" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 26 'call' 'call_ln32' <Predicate = (!icmp_ln25)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 27 [2/7] (0.00ns)   --->   "%call_ln32 = call void @compute_output_buffer_2d<array,array<ap_fixed<37,17,5,3,0>,6u>,config2>, i16 %InputLayer_read, i222 %layer2_out, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_27, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_28, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_25, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_26, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer, i32 %sX_5, i32 %sY_5, i32 %pY_5, i32 %pX_5" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 27 'call' 'call_ln32' <Predicate = (!icmp_ln25)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @ReadInputHeight_ReadInputWidth_str"   --->   Operation 28 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 2304, i64 2304, i64 2304"   --->   Operation 29 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%specpipeline_ln29 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_1" [firmware/nnet_utils/nnet_conv2d_stream.h:29->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 30 'specpipeline' 'specpipeline_ln29' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/7] (0.00ns)   --->   "%call_ln32 = call void @compute_output_buffer_2d<array,array<ap_fixed<37,17,5,3,0>,6u>,config2>, i16 %InputLayer_read, i222 %layer2_out, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_27, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_28, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_24, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_25, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_21, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_22, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_26, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_23, i16 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_20, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1, i16 %void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer, i32 %sX_5, i32 %sY_5, i32 %pY_5, i32 %pX_5" [firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 31 'call' 'call_ln32' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln27 = br void %for.body12.i" [firmware/nnet_utils/nnet_conv2d_stream.h:27->firmware/nnet_utils/nnet_conv2d_stream.h:76]   --->   Operation 32 'br' 'br_ln27' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 2.428ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln0') of constant 0 on local variable 'indvar_flatten' [21]  (0.538 ns)
+	'load' operation 12 bit ('indvar_flatten_load', firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76) on local variable 'indvar_flatten' [24]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln25', firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76) [25]  (1.352 ns)
+	'store' operation 0 bit ('store_ln25', firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76) of variable 'add_ln25', firmware/nnet_utils/nnet_conv2d_stream.h:25->firmware/nnet_utils/nnet_conv2d_stream.h:76 on local variable 'indvar_flatten' [34]  (0.538 ns)
+
+ <State 2>: 1.000ns
+The critical path consists of the following:
+	axis read operation ('InputLayer_read', firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76) on port 'InputLayer' (firmware/nnet_utils/nnet_conv2d_stream.h:32->firmware/nnet_utils/nnet_conv2d_stream.h:76) [32]  (1.000 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
