@@ -1,0 +1,35 @@
+Backend: Vitis
+ClockPeriod: 5
+ClockUncertainty: 27%
+HLSConfig:
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+InputShapes:
+  InputLayer:
+  - 48
+  - 48
+  - 1
+KerasModel: !keras_model '../gaussian_hls4ml-quinlyn/keras_model.keras'
+OutputDir: ../gaussian_hls4ml-quinlyn
+OutputPredictions: null
+OutputShapes:
+  layer19_out:
+  - 5
+Part: xcku035-fbva676-2-e
+ProjectName: gaussian
+Stamp: 47ececfe
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true
