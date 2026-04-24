@@ -1,0 +1,216 @@
+Backend: Vitis
+ClockPeriod: 5
+ClockUncertainty: 27%
+HLSConfig:
+  LayerName:
+    InputLayer:
+      Precision:
+        result: auto
+      Trace: false
+    bn1:
+      Precision:
+        bias: auto
+        result: auto
+        scale: auto
+      ReuseFactor: 8
+      Trace: false
+    bn2:
+      Precision:
+        bias: auto
+        result: auto
+        scale: auto
+      ReuseFactor: 8
+      Trace: false
+    bn3:
+      Precision:
+        bias: auto
+        result: auto
+        scale: auto
+      ReuseFactor: 8
+      Trace: false
+    center:
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+    conv1:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+    conv2:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+    conv3:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+    fc1:
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+    fc1_relu:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 8
+      TableSize: 1024
+      Trace: false
+    flatten:
+      Precision:
+        result: auto
+      Trace: false
+    intensity:
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+    intensity_sigmoid:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 8
+      TableSize: 1024
+      Trace: false
+    params:
+      Precision:
+        result: auto
+      ReuseFactor: 8
+      Trace: false
+    params_1:
+      Precision:
+        result: auto
+      ReuseFactor: 8
+      Trace: false
+    params_2:
+      Precision:
+        result: auto
+      ReuseFactor: 8
+      Trace: false
+    pool1:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: auto
+        result: auto
+      ReuseFactor: 8
+      Trace: false
+    pool2:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: auto
+        result: auto
+      ReuseFactor: 8
+      Trace: false
+    pool3:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: auto
+        result: auto
+      ReuseFactor: 8
+      Trace: false
+    relu1:
+      Precision:
+        param: auto
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 8
+      TableSize: 1024
+      Trace: false
+    relu2:
+      Precision:
+        param: auto
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 8
+      TableSize: 1024
+      Trace: false
+    relu3:
+      Precision:
+        param: auto
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 8
+      TableSize: 1024
+      Trace: false
+    std:
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+    std_softplus:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 8
+      TableSize: 1024
+      Trace: false
+    theta:
+      Precision:
+        accum: auto
+        bias: auto
+        result: auto
+        weight: auto
+      ReuseFactor: 8
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 8
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+InputShapes:
+  InputLayer:
+  - 48
+  - 48
+  - 1
+KerasModel: !keras_model '../gaussian_hls4ml/keras_model.keras'
+OutputDir: ../gaussian_hls4ml
+OutputPredictions: null
+OutputShapes:
+  layer25_out:
+  - 7
+Part: xcku035-fbva676-2-e
+ProjectName: gaussian
+Stamp: 5ba96609
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true
