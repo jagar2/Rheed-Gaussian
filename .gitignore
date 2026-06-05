@@ -1,0 +1,9 @@
+# Virtual environments
+.venv
+
+# HLS4ML
+gaussian_hls4ml_Q_Gen/
+gaussian_hls4ml_Q_Real/
+
+# Models
+Models
