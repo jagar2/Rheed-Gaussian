@@ -18,8 +18,24 @@ dataerai auth login --server https://beta.dataerai.com
 # Or: dataerai auth login --device --client-id dataerai-mobile --server https://beta.dataerai.com
 export DATAERAI_OWNER_TYPE=project
 export DATAERAI_OWNER_ID=<project-uuid>
-export DATAERAI_COLLECTION_ID=<collection-uuid>
 ```
+
+By default, each notebook uses its own collection named
+`<repository> · <notebook>`, such as `Rheed-Gaussian · Generated_Flow`. An
+exact name is reused on later runs. Add a prefix or postfix to route another
+run of the same notebook into a different collection:
+
+```sh
+python run_dataerai.py Generated_Flow.ipynb --profile smoke \
+  --collection-prefix "September batch" --collection-postfix "rerun 2"
+```
+
+The equivalent environment variables are `DATAERAI_COLLECTION_PREFIX` and
+`DATAERAI_COLLECTION_POSTFIX`; `DATAERAI_COLLECTION_SUFFIX` is accepted as an
+alias. `DATAERAI_COLLECTION_ID=<collection-uuid>` remains an explicit override
+and bypasses automatic notebook collection resolution. The resolved collection
+ID, title, routing mode, prefix and postfix are retained in every record.
+
 
 The destination is sealed at run start. All records use the selected owner and
 collection. Credentials remain in the CLI credential store; environment variables
