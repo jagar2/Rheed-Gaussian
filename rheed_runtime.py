@@ -17,6 +17,35 @@ def parameter(name: str, default: int) -> int:
     return value
 
 
+def restore_model_snapshot(path: str | Path, *, custom_objects: dict | None = None):
+    """Restore a trusted RHEED inference model from captured JSON and weight tensors.
+
+    QKeras 0.9 stores object activations as dictionaries, but its default
+    QActivation constructor expects a callable/string. Decode those explicitly.
+    Custom training Lambda functions additionally require their notebook context.
+    """
+    import numpy as np
+    import tensorflow as tf
+    from qkeras import QActivation, QConv2D, QDense
+    from qkeras.quantizers import get_quantizer
+
+    class RestoringQActivation(QActivation):
+        @classmethod
+        def from_config(cls, config):
+            config = dict(config)
+            if isinstance(config.get("activation"), dict):
+                config["activation"] = get_quantizer(config["activation"])
+            return cls(**config)
+
+    objects = {"QActivation": RestoringQActivation, "QConv2D": QConv2D, "QDense": QDense,
+               **(custom_objects or {})}
+    with np.load(path, allow_pickle=False) as data:
+        model = tf.keras.models.model_from_json(str(data["architecture_json"]), custom_objects=objects)
+        keys = sorted((k for k in data if k.startswith("weight_")), key=lambda k: int(k.split("_")[1]))
+        model.set_weights([data[k] for k in keys])
+    return model
+
+
 def capture_directory(tracker, directory: str | Path, *, role: str = "source"):
     """Archive exact generated files with relative paths, sizes, and hashes."""
     directory = Path(directory)

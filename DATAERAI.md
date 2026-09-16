@@ -71,6 +71,19 @@ Use sufficient disk space for the local spool and datasets.
   immutable destination, run UUID, settings and dependency hashes.
 - Executed `.ipynb`, cell error outputs, terminal summary and server asset IDs.
 
+Restore a saved inference model with:
+
+```python
+from rheed_runtime import restore_model_snapshot
+model = restore_model_snapshot("baby_yolo_qk.npz")  # or gaussian_qk.npz
+predictions = model(images, training=False).numpy()
+```
+
+The helper handles the QKeras 0.9 activation-deserialization compatibility issue.
+A dedicated CI test round-trips a real quantized model and requires identical
+predictions. Load only trusted architecture snapshots. Custom training Lambda
+models require their original notebook function/context as well.
+
 The native Dataerai research-object type is set for notebooks, figures, software,
 simulation/measurement outputs, analysis, protocols and logs. `generated_by`,
 `part_of_run`, `continues_from`, `uses_dependency` and `executes_notebook` relationships
