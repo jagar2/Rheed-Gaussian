@@ -96,7 +96,10 @@ Local evidence is kept in `.dataerai/runs/<run-id>/` and
 uploaded assets. `receipt.json` identifies the run and summary. These directories
 are ignored by Git. Capture failures stop execution; temporary connection, gateway
 and local database-lock errors have bounded retries. Retrying a complete notebook
-creates a new run rather than overwriting the old graph.
+creates a new run rather than overwriting the old graph. The recorder verifies that
+the uploaded content version is available on the server, completing a pending
+byte transfer through the normal API if necessary. Setup and finalization errors
+retain an executed notebook locally and make the run fail explicitly.
 
 The runner captures a notebook snapshot before finalization, then saves an additional
 local snapshot containing finalization output. Normal interactive Jupyter execution
